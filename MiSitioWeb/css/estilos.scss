@@ -55,10 +55,14 @@
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
 
-
+html, body {
+  height: 100%;
+}
 body {
   //background-color: #c0e7f3;
   //background-image: url("/images/espacio.jpg");
+  display: flex;
+  flex-direction: column;
   background-color: -webkit-linear-gradient(left, rgba(32,124,229,1) 0%, rgba(32,124,229,1) 7%, rgba(32,124,229,1) 13%, rgba(79,227,232,1) 100%);
   background-position: no-repeat center center fixed;
   background-size: 100%;
@@ -226,6 +230,7 @@ $foundation-5-top-bar-text-color: rgb(240, 130, 190);//$white;
   margin: 0 auto;
   margin-top: rem-calc(0);
   background-color: rgb(5, 0, 24); //rgb(240, 130, 190); //rgba(153, 7, 92, 0.705); //$dark-gray; 
+  flex-shrink: 0;
   
   #engadget-footer-social {
     @include grid-row();
