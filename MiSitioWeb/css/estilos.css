@@ -4684,7 +4684,12 @@ html.is-reveal-open {
     .show-for-portrait {
       display: block !important; } }
 
+html, body {
+  height: 100%; }
+
 body {
+  display: flex;
+  flex-direction: column;
   background-color: -webkit-linear-gradient(left, #207ce5 0%, #207ce5 7%, #207ce5 13%, #4fe3e8 100%);
   background-position: no-repeat center center fixed;
   background-size: 100%; }
@@ -4776,13 +4781,23 @@ body {
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
   color: white;
   font-weight: 600;
+  font-family: fantasy;
   text-align: center; }
 
 .texto {
-  background: -webkit-linear-gradient(white, #f1158e);
+  background: -webkit-linear-gradient(#f02796, #f082be);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: tomato; }
+  color: #f02796;
+  font-family: "Tahoma", "Geneva", sans-serif;
+  font-weight: bold; }
+
+.titulo {
+  background: -webkit-linear-gradient(#f02796, #f082be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f02796;
+  font-family: "Tahoma", "Geneva", sans-serif; }
 
 .fondoTarjeta {
   background: #020024;
@@ -4827,7 +4842,8 @@ body {
   width: 100%;
   margin: 0 auto;
   margin-top: 0;
-  background-color: #050018; }
+  background-color: #050018;
+  flex-shrink: 0; }
   #engadget-footer-social-container #engadget-footer-social {
     max-width: 75rem;
     margin-right: auto;

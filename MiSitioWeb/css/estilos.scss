@@ -167,14 +167,25 @@ $foundation-5-top-bar-text-color: rgb(240, 130, 190);//$white;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   color: white;
   font-weight: 600;
+  font-family: fantasy;
   text-align: center;
 }
 
 .texto {
-  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(241, 21, 142));
+  background: -webkit-linear-gradient(rgb(240, 39, 150),rgb(240, 130, 190));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: tomato;   
+  color: rgb(240, 39, 150);   
+  font-family:  "Tahoma", "Geneva", sans-serif;
+  font-weight: bold;
+}
+
+.titulo {
+  background: -webkit-linear-gradient(rgb(240, 39, 150),rgb(240, 130, 190));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(240, 39, 150);   
+  font-family:  "Tahoma", "Geneva", sans-serif;
 }
 
 .fondoTarjeta {
